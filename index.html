@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- BASIC -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Score808 TV | Live Matches, Scores & Football Updates</title>
+
+<meta name="description" content="Score808 TV provides live football match schedules, real-time scores, and latest updates from top leagues worldwide. Stay updated with today's matches and official broadcast information.">
+
+<meta name="keywords" content="score808 tv, score808 live, score808 football, live match schedule, live scores today, football updates, soccer matches today">
+
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="https://tv.score808.eu.org/">
+
+<!-- LANGUAGE -->
+<meta http-equiv="content-language" content="en">
+
+<!-- OPEN GRAPH (FACEBOOK, WHATSAPP) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Score808 TV | Live Matches & Football Updates">
+<meta property="og:description" content="Get live match schedules, real-time scores, and football updates from top leagues worldwide on Score808 TV.">
+<meta property="og:url" content="https://tv.score808.eu.org/">
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD2892oAxi2JqOozahWbXAx1WajRvg2TUqajaBX1WPa3PomJpzXaVoHR9PBCNcpVFoo45ATqQ1bP32zcGI1aOkYba1bpyZJxllYgsXY1w_gBzfxeb5mK0Y7qfFqiBt-7ZaNp1M5kxFXs6xJa5QUZqGNzSHkLQcMZCYvvytcNoCd7d722sPWwdkin6NCDs/s1600/livescore%20808.png">
+<meta property="og:site_name" content="Score808 TV">
+<meta property="og:locale" content="en_US">
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Score808 TV | Live Matches & Scores">
+<meta name="twitter:description" content="Follow today's football matches with schedules, live scores, and updates worldwide.">
+<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD2892oAxi2JqOozahWbXAx1WajRvg2TUqajaBX1WPa3PomJpzXaVoHR9PBCNcpVFoo45ATqQ1bP32zcGI1aOkYba1bpyZJxllYgsXY1w_gBzfxeb5mK0Y7qfFqiBt-7ZaNp1M5kxFXs6xJa5QUZqGNzSHkLQcMZCYvvytcNoCd7d722sPWwdkin6NCDs/s1600/livescore%20808.png">
+
+<!-- GEO (OPTIONAL GLOBAL TARGET) -->
+<meta name="geo.region" content="ID">
+<meta name="geo.placename" content="Indonesia">
+
+<!-- PERFORMANCE -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://api.sofascore.app">
+<link rel="dns-prefetch" href="//api.freesport.eu.org">
+
+<!-- FAVICON -->
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/kebutuhanpublik/kebutuhanpublik.github.io@main/favicon.ico">
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #0f172a 0, #020617 45%, #000 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, sans-serif;
+      color: #e5e7eb;
+      padding: 16px;
+    }
+    
+    #navbar-iframe{
+  heigth:0px;
+  visibility:hidden;
+  display:none
+}
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      background: rgba(15, 23, 42, 0.93);
+      border-radius: 18px;
+      padding: 22px 20px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glow {
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 0 0, rgba(248, 113, 113, 0.25), transparent 55%),
+        radial-gradient(circle at 100% 0, rgba(56, 189, 248, 0.25), transparent 55%);
+      mix-blend-mode: screen;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo-group { display: flex; align-items: center; gap: 10px; }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #2673da, #3F51B5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 17px;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.15),
+                  0 14px 32px rgba(0,0,0,0.45);
+    }
+
+    .logo-title { font-size: 16px; font-weight: 700; letter-spacing: 0.13em; }
+    .logo-sub   { font-size: 11px; color: #9ca3af; letter-spacing: 0.14em; }
+
+    .badge-live {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.9);
+      border: 1px solid rgba(148,163,184,0.45);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      display: flex; align-items: center; gap: 6px;
+      text-transform: uppercase;
+      color: #9ca3af;
+    }
+
+    .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 0 5px rgba(34,197,94,0.25);
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 span { color: #fb923c; }
+
+    .text {
+      font-size: 13px;
+      color: #9ca3af;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .block {
+      background: rgba(15,23,42,0.9);
+      border-radius: 14px;
+      border: 1px solid rgba(148,163,184,0.45);
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .block-label {
+      font-size: 10px;
+      color: #9ca3af;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 4px;
+    }
+
+    .btn-main {
+      display: block;
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 10% 0%, #041935, #3F51B5);
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 14px 40px rgb(113 138 248 / 45%);
+    }
+
+    .btn-secondary {
+      display: block;
+      margin-top: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.7);
+      background: rgba(15,23,42,0.85);
+      text-align: center;
+      color: #e5e7eb;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .footer {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 10px;
+      color: #6b7280;
+    }
+     .ads-area{
+margin:40px 0;
+text-align:center;
+padding:10px;
+background:#fff;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+     .join-box{
+margin-top:14px;
+display:flex;
+gap:8px;
+}
+.join{
+flex:1;
+padding:10px;
+border-radius:999px;
+text-decoration:none;
+font-size:12px;
+font-weight:600;
+color:#fff;
+text-align:center;
+}
+.tele{background:#229ED9;}
+.wa{background:#25D366;}
+  </style>
+<script src="https://jsc.mgid.com/site/726924.js" async></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="glow"></div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-group">
+      <div class="logo-mark">S</div>
+      <div>
+        <div class="logo-title">Score808tv</div>
+        <div class="logo-sub">Official Stream 2026</div>
+      </div>
+    </div>
+
+    <div class="badge-live">
+      <span class="dot"></span>
+      LIVE NOW
+    </div>
+  </div>
+
+  <!-- TITLE -->
+  <h1>
+    New Official Page is <span>Now Liveskor</span>
+  </h1>
+
+  <p class="text">
+    Semua siaran liveskor Score808 sekarang hanya tersedia di halaman baru ini.
+    Pastikan kamu simpan link ini untuk akses tercepat tanpa delay.
+  </p>
+
+  <!-- TRUST -->
+  <div class="block">
+    <div class="block-label">Status</div>
+    ✅ Server stabil • ⚡ Anti delay • 🔒 Aman
+  </div>
+
+
+  <!-- BUTTON -->
+  <a href="https://jalalive.beritanasional.eu.org/" class="btn-main">
+    🚀 Masuk Live Sekarang (V1)
+  </a>
+
+  <a href="https://tigoals.score808.eu.org" class="btn-main">
+    ⚡ Server Alternatif (V2)
+  </a>
+
+  <a href="https://tigoals2.score808.eu.org" class="btn-main">
+    🔥 Backup Server (V3)
+  </a>
+
+  <!-- SEARCH -->
+  <a href="https://www.google.com/search?q=tigoals+live+candil" target="_blank" class="btn-secondary">
+    🔍 Cari Link Terbaru
+  </a>
+
+  <!-- JOIN -->
+  <p style="font-size:13px;color:#9ca3af;margin-top:14px;">
+    ⚡ Dapatkan link tercepat tanpa delay
+  </p>
+
+  <div class="join-box">
+    <a href="https://t.me/score808alternative" class="join tele">Telegram</a>
+    <a href="https://www.whatsapp.com/channel/0029VbC7N00EQIaqwkJiAv0Y" class="join wa">WhatsApp</a>
+  </div>
+
+  <div class="footer">
+    © 2026 Score808 tv • Official Access Page
+  </div>
+
+</div>
+  
+   <!-- Histats.com  START  (aync)-->
+</body>
+</html>
